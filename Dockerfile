@@ -23,7 +23,7 @@ RUN (apt-get install -y python-software-properties; \
      apt-get clean -y)
 
 # install perl & python tools
-RUN apt-get install -y libyaml-perl  libtemplate-perl python-biopython libjson-perl 
+RUN apt-get install -y libyaml-perl  libtemplate-perl python-biopython libjson-perl python-yaml
 
 # install ruby & gems for bioruby
 RUN apt-get install -y ruby-dev rubygems
