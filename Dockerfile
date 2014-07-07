@@ -10,7 +10,7 @@ MAINTAINER Mario Fasold "mario.fasold@ecseq.com"
 RUN apt-get -qq update
 
 ## basic tools
-RUN apt-get install -y wget unzip python-setuptools
+RUN apt-get install -y wget unzip python-setuptools zip
 
 ## install java & and remove unessary stuff in one go
 RUN (apt-get install -y python-software-properties; \
