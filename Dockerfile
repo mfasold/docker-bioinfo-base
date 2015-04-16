@@ -29,4 +29,4 @@ RUN apt-get install -y libyaml-perl  libtemplate-perl python-biopython libjson-p
 RUN apt-get install -y ruby-dev rubygems
 
 # install libraris needed by NGS tools
-RUN apt-get install -y tabix libncurses5-dev
+RUN apt-get install -y tabix libncurses5-dev zlib1g-dev
