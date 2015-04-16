@@ -10,7 +10,7 @@ MAINTAINER Mario Fasold "mario.fasold@ecseq.com"
 RUN apt-get -qq update
 
 ## basic tools
-RUN apt-get install -y wget unzip python-setuptools zip
+RUN apt-get install -y wget zip unzip python-setuptools rsync
 
 ## install java & and remove unessary stuff in one go
 RUN (apt-get install -y python-software-properties; \
@@ -23,7 +23,7 @@ RUN (apt-get install -y python-software-properties; \
      apt-get clean -y)
 
 # install perl & python tools
-RUN apt-get install -y libyaml-perl  libtemplate-perl python-biopython libjson-perl python-yaml
+RUN apt-get install -y libyaml-perl  libtemplate-perl python-biopython libjson-perl python-yaml libpar-packer-perl 
 
 # install ruby & gems for bioruby
 RUN apt-get install -y ruby-dev rubygems
